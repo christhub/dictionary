@@ -1,5 +1,6 @@
 
 <h2>words in dictionary:</h2>
+
 <div class="container">
   <% @words.each() do |word| %>
     <div class="word">
@@ -8,6 +9,7 @@
     </div>
   <% end %>
 </div>
+
 <div class="definition-button">
   <a id='add word' class="btn btn-primary" href="/words/new/"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span></a>
 </div>

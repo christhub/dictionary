@@ -1,12 +1,14 @@
 <h2><%=@word.word()%></h2>
+
 <div class="definition">
   <ul><% if @word.definitions.any? %>
-  <% @word.definitions.each() do |definition| %>
-    <li><%= definition.definition() %></li>
-    <% end %>
-    <% end%>
+        <% @word.definitions.each() do |definition| %>
+          <li><%= definition.definition() %></li>
+        <% end %>
+      <% end%>
   </ul>
 </div>
+
 <div class="definition-button">
   <a class="btn btn-primary" href="/words/"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></a>
   <a id='add definition' class="btn btn-primary" href="/words/<%= @word.id()%>/new/"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>

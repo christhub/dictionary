@@ -1,4 +1,7 @@
-<h2>Words in dictionary:</h2>
-<% @words.each() do |word| %>
-  <%= word.word() %> | <a href="/words/<%= word.id() %>/">View Word</a><br>
-<% end %>
+
+<h2>words in dictionary:</h2>
+<div class="container">
+  <% @words.each() do |word| %>
+    <%= word.word() %> | <a class="btn btn-primary" href="/words/<%= word.id() %>/">View Word</a><br>
+  <% end %>
+</div>

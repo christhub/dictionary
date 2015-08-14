@@ -16,9 +16,14 @@ Technologies Used
 Buttons may not be as intuitive as I'd hope for, so incase you're wondering what the buttons do..
 
 '+' adds a word or definition depending on which page you're on
+
 'menu in green' -be sure to click the actual text part of the button- but it takes you back to index
+
 'v' means expand word and see definiton
+
 '<' means go back
+
+https://arcane-bayou-4030.herokuapp.com
 
 Legal
 

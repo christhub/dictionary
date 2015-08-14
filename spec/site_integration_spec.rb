@@ -10,12 +10,12 @@ describe('When using the site to view a dictionary', {:type => :feature}) do
 
   it('opens the site') do
     visit('/')
-    expect(page).to have_content('Welcome')
+    expect(page).to have_content('vocabulary')
   end
 
   it('adds a new word to the database') do
     visit('/')
-    click_link('Add a New Word')
+    click_link('Add Word')
     fill_in('word', :with => 'abacus')
     click_button('Submit')
     expect(page).to have_content('abacus')
@@ -23,7 +23,7 @@ describe('When using the site to view a dictionary', {:type => :feature}) do
 
   it('adds a new definiton to the word') do
     visit('/')
-    click_link('Add a New Word')
+    click_link('Add Word')
     fill_in('word', :with => 'abacus')
     click_button('Submit')
     click_link('View Word')

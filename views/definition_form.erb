@@ -1,6 +1,8 @@
 <form action="/words/" method="post">
-  <input id='id' name='id' type='hidden' value='<%= @word.id() %>'>
-  <label for="definition">Enter Definition: </label>
-  <input type="text" name="definition" id="definition">
-  <button type="submit">Submit</button>
+  <div class="container-form">
+    <input id='id' name='id' type='hidden' value='<%= @word.id() %>'>
+    <label for="definition">Enter Definition: </label>
+    <input type="text" name="definition" id="definition">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
 </form>

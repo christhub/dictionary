@@ -3,6 +3,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 body{
   text-align: center;
 }
@@ -11,10 +15,44 @@ a {
   color: white;
 }
 
-.container {
+.word {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-form {
   text-align: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+.container {
+  text-align: left;
+  margin:auto;
+}
+
+.container-index {
+  text-align: center;
+  margin:auto;
+}
+
+.definition-button {
+  text-align: center;
+}
+
+.definition {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 15px;
 }
 
 body {
   background-color: #96E8BF;
+}
+
+label {
+  font-size: 20;
+  font-weight: bold;
 }

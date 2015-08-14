@@ -2,6 +2,9 @@
 <h2>words in dictionary:</h2>
 <div class="container">
   <% @words.each() do |word| %>
-    <%= word.word() %> | <a class="btn btn-primary" href="/words/<%= word.id() %>/">View Word</a><br>
+    <div class="word">
+      <a class="btn btn-primary" href="/words/<%= word.id() %>/">View Word</a>
+      <%= word.word() %> 
+    </div>
   <% end %>
 </div>

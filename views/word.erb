@@ -1,2 +1,7 @@
 <h2><%=@word.word()%></h2>
 <br><a href="/words/<%= @word.id()%>/new/">Add a new definition</a>
+<br><% if @word.definitions.any? %>
+<br><% @word.definitions.each() do |definition| %>
+  <%= definition.definition() %>
+  <% end %>
+  <% end%>

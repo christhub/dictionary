@@ -1,4 +1,5 @@
-<form action="/words/:id/new/" method="post">
+<form action="/words/" method="post">
+  <input id='id' name='id' type='hidden' value='<%= @word.id() %>'>
   <label for="definition">Enter Definition: </label>
   <input type="text" name="definition" id="definition">
   <button type="submit">Submit</button>

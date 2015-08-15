@@ -46,7 +46,7 @@ post('/words/') do
   definition  = params.fetch('definition')
   id_number   = params.fetch('id')
   @definition = Definition.new(:definition => definition)
-  @definition.save()
+  # @definition.save() # removed because unnecessary for this exercise
   @word       = Word.find(id_number.to_i)
   @word.add_definition(@definition)
   erb(:word)

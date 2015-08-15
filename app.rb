@@ -37,6 +37,11 @@ get('/words/:id/new/') do
   erb(:definition_form)
 end
 
+# get('/words/clear/') do
+#   @word = Word.clear
+#   redirect("/words/")
+# end
+
 post('/words/') do
   definition  = params.fetch('definition')
   id_number   = params.fetch('id')

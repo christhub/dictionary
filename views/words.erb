@@ -2,14 +2,17 @@
 <h2>words in dictionary:</h2>
 
 <div class="container">
-  <% @words.each() do |word| %>
-    <div class="word">
-      <a id='view word' href="/words/<%= word.id() %>/"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-      <%= word.word() %>
-    </div>
+  <% if @words.any? %>
+    <% @words.each() do |word| %>
+      <div class="word">
+        <a id='view word' href="/words/<%= word.id() %>/"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <%= word.word() %>
+    <% end %>
+      </div>
   <% end %>
 </div>
 
 <div class="definition-button">
+  <!-- <a class="btn btn-primary" href="/words/clear/">clear</a> -->
   <a id='add word' class="btn btn-primary" href="/words/new/"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span></a>
 </div>

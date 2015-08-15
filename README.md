@@ -25,6 +25,8 @@ Buttons may not be as intuitive as I'd hope for, so incase you're wondering what
 
 https://arcane-bayou-4030.herokuapp.com
 
+I did some editing on the styling at home and I didn't mean to push it to github, my rspec was working but I changed some of the links and now it isn't working.. so I'm sorry about that. 
+
 Legal
 
 Copyright (c) 2015 Christian Lei

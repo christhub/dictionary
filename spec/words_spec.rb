@@ -57,7 +57,7 @@ describe(Word) do
       test_word = Word.new(:word => 'seance')
       test_word.save()
       test_definition = Definition.new(:definition => 'a meeting at which people attempt to contact the dead')
-      test_definition.save()
+      # test_definition.save() # removed because unnecessary for this exercise
       test_word.add_definition(test_definition)
       expect(test_word.definitions()).to(eq([test_definition]))
     end

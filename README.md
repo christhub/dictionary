@@ -6,19 +6,18 @@ Christian Lei
 Setup
 
 Download the Repository
-'''
+```
 'cd' into the Directory
-'''
-'''
+```
+```
 'ruby app.rb' to start the server
-'''
-'''
+```
+```
 'rspec' to test
-'''
-'''
+```
+```
 Technologies Used
-'''
-
+```
 ****SOME NOTES*****
 Buttons may not be as intuitive as I'd hope for, so incase you're wondering what the buttons do..
 
